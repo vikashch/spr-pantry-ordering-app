@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Pantry Admin</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body id="body">
+		<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+			<button class="c-menu__close" id="cancelButton">&larr; Close Menu</button>
+			<ul id = "categoryList" class="c-menu__items">				
+			</ul>
+		</nav>
+		<div id="c-mask" class="c-mask"></div>
+		<div class="header box-border">
+			<div class="header__list-icon">
+				<i title="View Available Items" id ="c-button--slide-left" class="fa fa-bars fa-lg"></i>
+			</div>
+			<div class="header__logo">
+				<img src="assets/spr-logo.png">
+			</div>
+			<div class="header__text box-border">
+				Orders Now
+				<div class="header__stats box-border" id="StatsLink" > <span >Stats</span></div>
+				<div class="header__add-icon" title="Add New Items" id="openAddItemModal"><i class="fa fa-plus-circle fa-lg"></i></div>
+			</div>
+		</div>
+		<div class="main-section">
+			<div class="table order-queue box-border">
+				<div class="do__heading box-border">
+					ORDER QUEUE
+					<div class="md__labels float-right"><input type="checkbox" id="clubOrdersCheck">Club Orders</div> 
+				</div>
+				<div class="do__body box-border">
+					<div class="do__table-head">
+						<div class="do__table-cell do__table-cell_id">#</div>
+						<div class="do__table-cell do__table-cell_name">Name</div>
+						<div class="do__table-cell do__table-cell_order">Order</div>
+						<div class="do__table-cell do__table-cell_description">Description</div>
+						<div class="do__table-cell do__table-cell_table">Table</div>
+						<div class="do__table-cell do__table-cell_quantity">Quantity</div>
+						<div class="do__table-cell do__table-cell_actions">Actions</div>
+					</div> 
+					<div class="do__table-body" id="queueTable">	
+					</div>
+				</div>
+			</div>
+			<div class="table del-orders box-border">
+				<div class="do__heading box-border">
+					ORDERS DELIVERED
+				</div>
+				<div class="do__body box-border">
+					<div class="do__table-head">
+						<div class="do__table-cell do__table-cell_dot">#</div>
+						<div class="do__table-cell do__table-cell_dot">Name</div>
+						<div class="do__table-cell do__table-cell_dot">Table</div>
+						<div class="do__table-cell do__table-cell_dot">Item</div>
+					</div> 
+					<div class="do__table-body" id="deliveryTable">
+					</div>
+				</div>
+			</div>
+		<div id="modalDialog" class="modalDialog">		
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+		<script src="services.js"></script>
+		<script src="app.js"></script>
+		<script type="text/javascript">
+		document.getElementById("StatsLink").addEventListener("click", function(){
+			// window.alert("ds")
+			location.href="./Stats.html"
+   			 					})
+		</script>
+	</body>
+</html>

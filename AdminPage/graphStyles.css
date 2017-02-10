@@ -1,0 +1,90 @@
+#wrap {
+  width: 100%; 
+  height: 50px; 
+  margin: 0; 
+  z-index: 99; 
+  position: relative; 
+  background-color: #e67a73;
+}
+#header_name{
+  margin-left: 30%
+}
+.navbar {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  position: absolute; 
+  border-right: 1px solid #e67a73; 
+
+}
+.navbar li  {
+  height: auto;
+  width: 150px; 
+  float: left;  
+  text-align: center; 
+  list-style: none;  
+  font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+  padding: 0;
+  margin: 0;
+  background-color: #e67a73;
+  border-right: 1px solid #BD7C65;
+
+}
+
+.navbar a {             
+  padding: 18px 0;  
+  border-left: 1px solid #e67a73;
+  border-right: 1px solid #e67a73; 
+  border-bottom: 1px solid #BD7C65;
+  color: white; 
+  display: block;
+  text-decoration: none;
+}
+
+.navbar li ul   {
+  display: none;  
+  height: auto;                 
+  margin: 0; 
+  padding: 0; 
+  border-bottom: 1px solid #BD7C65;
+}       
+
+.navbar li:hover ul   {
+  display: block; /* Displays the drop-down box when the menu item is hovered over */
+}
+.side_heading{
+  display: inline;
+}
+form{
+  display: inline;
+  margin-left: 10%;
+  margin-right:10%;
+}
+.graph_canvas{
+  margin-bottom: 100px;
+  margin-left: 10%;
+}
+
+.button {
+
+  box-shadow:inset 0px 39px 0px -24px #e67a73;
+  background-color:#e4685d;
+
+  border-radius:4px;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+.button:hover {
+  background-color:#eb675e;
+}
+.button:active {
+  position:relative;
+  top:1px;
+}
